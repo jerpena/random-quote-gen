@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+  color: white;
+  background-color: rgb(83, 0, 0);
+}
+
+header {
+  margin-top: 100px;
+  background-color: rgb(83, 0, 0);
+  height: 300px;
+  width: 100%;
+  display: grid;
+}
+
+#quote-container {
+  display: grid;
+  grid-template-rows: 40% 40%;
+}
+
+#quote {
+  margin: 0 10%;
+  align-self: end;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+#author {
+  margin: 0px 10%;
+  align-self: center;
+  justify-self: end;
+  font-weight: 600;
+}
+
+#author::before {
+  content: '\2014';
+}
+
+#button {
+  padding: 0.8rem 2rem;
+  font-size: 1.3rem;
+  align-self: center;
+  justify-self: center;
+  width: max-content;
+}
